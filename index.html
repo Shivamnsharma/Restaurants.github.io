@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta" rel="stylesheet">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="animate.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    
+<style>
+    html,body
+        {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+       *
+       {
+           box-sizing: border-box;
+           user-select: none;
+       }
+       .class1
+       {
+        width: 100%;
+        height: 120vh;
+        
+        background-image: url('c0.jpg');
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 3;
+        }
+        
+       .menu
+       {
+           background-color: darkgray;
+           width: 100%;
+           height: 10vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: fixed;
+           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.527);
+           z-index: 5;
+       }
+       .menu>a
+       {
+            margin-left: 5%;
+            width: 10%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            font-size: 25px;
+            transition: 1s;
+       }
+       .menu>a:hover
+       {
+           background-color: rgb(211, 11, 11);
+           transition: 1s;
+       }
+       .row
+       {
+           width: 90%;
+           height: 40%;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%,-50%);
+           color:white;
+           font-size: 42px;
+           font-family: 'Kaushan Script', cursive;
+       }
+       
+       .class2
+       {
+           width:100%;
+           height: 80vh;
+           position: relative;
+           background-color: #2d3436;
+           border: 5px solid white;
+       }
+        .food
+       {
+           width: 90%;
+           height: 80%;
+           position: absolute;
+           left: 50%;
+           top: 40%;
+           transform: translate(-50%,-40%);  
+           display: flex;
+           justify-content: center;
+       }
+       .food1,.food2,.food3,.food4
+       {
+        width:25%;
+        height: 100%;
+        
+        margin: 15px; 
+        position: relative;
+       }
+       .fruit1
+        {
+           position: absolute;
+           width: 35%;
+           height: 20%;
+           background-image: url('f1.png');
+           background-size: cover;
+           padding: 70px;
+           left: 50%;
+           transform: translateX(-50%);
+           border-radius: 50%;
+           box-shadow: 0px 0px 20px rgba(228, 215, 247, 0.274); 
+           
+        }
+        .fruit2
+        {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+           font-size: 20px;
+        }
+        .fruit3
+        {
+            width: 80%;
+            height: 45%;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 26px;
+            color:white;
+        }
+        .sea1
+        {
+           position: absolute;
+           width: 35%;
+           height: 20%;
+           background-image: url('f2.png');
+           background-size: cover;
+           padding: 70px;
+           left: 50%;
+           transform: translateX(-50%);
+           border-radius: 50%;
+           box-shadow: 0px 0px 20px rgba(228, 215, 247, 0.274); 
+           
+        }
+        .sea2
+        {
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+           font-size: 18px;
+        }
+        .sea3
+        {
+            width: 80%;
+            height: 45%;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 26px;
+            color:white;
+        }
+        .veg1
+        {
+           position: absolute;
+           width: 35%;
+           height: 20%;
+           background-image: url('f3.png');
+           background-size: cover;
+           padding: 70px;
+           left: 50%;
+           transform: translateX(-50%);
+           border-radius: 50%;
+           box-shadow: 0px 0px 20px rgba(228, 215, 247, 0.274); 
+           
+        }
+        .veg2
+        {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+           font-size: 20px;
+        }
+        .veg3
+        {
+            width: 80%;
+            height: 45%;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 26px;
+            color:white;
+        }
+        .meat1
+        {
+           position: absolute;
+           width: 35%;
+           height: 20%;
+           background-image: url('f4.png');
+           background-size: cover;
+           padding: 70px;
+           left: 50%;
+           transform: translateX(-50%);
+           border-radius: 50%;
+           box-shadow: 0px 0px 20px rgba(228, 215, 247, 0.274); 
+           
+        }
+        .meat2
+        {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+           font-size: 20px;
+        }
+        .meat3
+        {
+            width: 80%;
+            height: 45%;
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 26px;
+            color:white;
+        }
+        .class3
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .top
+        {
+            width: 4%;
+            height: 8vh;
+            
+            position: absolute;
+            left: 100%;
+            transform: translate(-100%);
+            bottom: 0%;
+            z-index: 2;
+            position: fixed;
+        }
+        .part1
+        {
+            width: 50%;
+            height: 100%;
+            background-image: url('or.jpg');
+            background-size: cover;
+            filter: grayscale(40%);
+            
+        }
+        .part2
+        {
+            width: 50%;
+            height: 100%;
+            background-color: #f39c12;
+            display: flex;
+            justify-content: center;
+            color: black;
+            font-size: 21px;
+            font-family: 'Stylish', sans-serif;
+            text-decoration: none;
+            
+        }
+        .hov>p>a
+        {
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+            font-size: 40px;
+            transition: 1s;  
+            z-index: 1;  
+        }
+        .hov>p>a:hover
+       {
+           background-color: rgb(255, 0, 0);
+           transition: 1s;
+       }
+       .class4
+       {
+           width:100%;
+           height: 300vh;
+           position: relative;
+       }
+       .menu1
+       {
+           width: 10%;
+           height: 6%;
+           top: 1%;
+           background-image: url('menu1.png');
+           background-size: cover;
+           position: absolute;
+           left: 50%;
+           transform: translate(-50%);
+       }
+       .text1
+       {
+           width: 50%;
+           height: 8%;
+           position: absolute;
+           left: 50%;
+           top: 5%;
+           transform: translate(-50%);
+           color:rgb(0, 0, 0);
+           font-size: 30px;
+           font-family: 'Nosifer', cursive;
+       }
+       .text2
+       {
+           width: 80%;
+           height: 11%;
+           position: absolute;
+           left: 50%;
+           top: 16%;
+           transform: translate(-50%);
+           color:rgb(0, 0, 0);
+           font-size: 20px;
+           font-family: 'Quintessential', cursive;
+       }
+       .text3
+       {
+           width: 90%;
+           height: 30%;
+           
+           position: absolute;
+           left: 50%;
+           top: 26%;
+           transform: translate(-50%);
+           display: flex;
+           justify-content: center;
+       }
+       .icon1,.icon2,.icon3,.icon4
+        {
+            width:25%;
+            height: 90%;
+            
+            margin: 20px;
+            position: relative;
+            
+        }
+        .pizza1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('p1.jpg');
+           background-size: cover;
+           left:50%;
+           transform: translateX(-50%);
+        }
+        .pizza2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .pizza3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .mass1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('m1.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .mass2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .mass3
+        {
+            width: 80%;
+            height: 10%;
+            top: 60%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .bur1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('b1.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .bur2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            font-size: 30px;
+        }
+        .bur3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .south1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('s1.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .south2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            font-size: 30px;
+        }
+        .south3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .text4
+       {
+           width: 90%;
+           height: 30%;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%);
+           display: flex;
+           justify-content: center;
+       }
+       .icon5,.icon6,.icon7,.icon8
+        {
+            width:25%;
+            height: 90%;
+            
+            margin: 20px;
+            position: relative;
+            
+        }
+        .burg1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('b2.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .burg2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .burg3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .fry1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('f0.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .fry2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .fry3
+        {
+            width: 80%;
+            height: 10%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .seah1
+        {
+            
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('s2.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .seah2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .seah3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .mush1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('m2.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .mush2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .mush3
+        {
+            width: 80%;
+            height: 10%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .text5
+       {
+           width: 90%;
+           height: 30%;
+           
+           position: absolute;
+           left: 50%;
+           top: 75%;
+           transform: translate(-50%);
+           display: flex;
+           justify-content: center;
+       }
+       .icon9,.icon10,.icon11,.icon12
+        {
+            width:25%;
+            height: 90%;
+            
+            margin: 20px;
+            position: relative;
+            
+        }
+        .fish1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('fi.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .fish2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            font-size: 30px;
+        }
+        .fish3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .egg1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('egg.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .egg2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            font-size: 30px;
+        }
+        .egg3
+        {
+            width: 80%;
+            height: 10%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .roll1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('r2.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .roll2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .roll3
+        {
+            width: 80%;
+            height: 10%;
+            top: 55%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        .sweet1
+        {
+           position: absolute;
+           width: 100%;
+           height: 40%;
+           border: 5px brown;
+           border-right-style: groove;
+           border-bottom-style: groove;
+           background-image: url('s3.jpg');
+           background-size: cover;
+           left: 50%;
+           transform: translateX(-50%);
+        }
+        .sweet2
+        {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            color: rgb(31, 1, 1);
+            transform: translateX(-50%);
+            font-size: 30px;
+        }
+        .sweet3
+        {
+            width: 80%;
+            height: 10%;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            font-size: 25px;
+            color:black;
+        }
+        
+        .class5
+        {
+            width: 100%;
+            height: 50vh;
+            background-color: #2c3e50;
+            position: relative;
+        }
+        .shiv1
+        {
+            width: 50%;
+            height: 30vh;
+            position: absolute;
+            font-size: 20px;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%);
+            color:#f39c12;
+            font-family: 'Simonetta', cursive;
+        }
+        .shiv2
+       {
+           width: 50%;
+           height: 10vh;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+       }
+       .shiv2>a
+       {
+            margin: 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            left: 50%;
+            transform: translate(-50%);
+            color:#f39c12;
+            font-size: 40px;
+       }
+</style>
+</head>
+<body>
+    <div class="class1">
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="open.html">Reservation</a>
+            <a href="Feedback.html">Feedback</a>
+        </div>
+            <div class="row" >
+                            <div><h1 align="center" class="zoomInDown animated">&nbsp; SPICY &nbsp; HOT &nbsp; RESTAURANT</h1></div>
+                </div>
+    </div>
+    
+    <div class="class2">
+            <div class="food">
+                    <div class="food1">
+                            <div class="fruit1"></div>
+                            <div class="fruit2"><b><i><h1>Fruits</h1></i></b></div>
+                            <div class="fruit3"><p class="fadeInLeft animated">Give me juicy autumnal fruit, ripe and red from the orchard.</p></div>
+                    </div>
+                    <div class="food2">
+                            <div class="sea1"></div>
+                            <div class="sea2"><b><i><h1>SeaFoods</h1></i></b></div>
+                            <div class="sea3"><p class="fadeInUp animated">Grilled filet of salmon served with our fresh sea food.</p></div>
+                    </div>
+                    <div class="food3">
+                            <div class="veg1"></div>
+                            <div class="veg2"><b><i><h1>Vegetables</h1></i></b></div>
+                            <div class="veg3"><p class="fadeInUp animated">Served with couscous with a confetti of vegetables.</p></div>
+                    </div>
+                    <div class="food4">
+                            <div class="meat1"></div>
+                            <div class="meat2"><b><i><h1>Meat</h1></i></b></div>
+                            <div class="meat3"><p class="fadeInRight animated">Sun dried meats give the salmon a flavorful boost. </p></div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="class3" id="about">
+            <div class="top"><a href="#"><img src="top.png" width="40" height="40"></a></div>
+        <div class="part1"></div>
+            <div class="part2">
+                <center>
+                        <h1 class="zoomIn animated">About</h1><hr width="300" size="3" color="blue"><br><br><br>
+                        <p class="zoomIn animated">Aperiam assumenda nostrum iusto molestiae quas eligendi, placeat provident nisi quae libero, dolorem quia! Saepe voluptas ut aspernatur pariatur mollitia nisi et.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam assumenda nostrum iusto molestiae quas eligendi, placeat provident nisi quae libero, dolorem quia! Saepe voluptas ut aspernatur pariatur mollitia nisi et.Aperiam assumenda nostrum iusto molestiae quas eligendi, placeat provident nisi quae libero, dolorem quia! Saepe voluptas ut aspernatur pariatur mollitia nisi et.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam assumenda nostrum iusto molestiae quas eligendi, dolorem quia! Saepe voluptas ut aspernatur pariatur mollitia nisi et.</p><br><br><br>
+                        <div class="hov"><p class="btn hvr-pulse shrink"><a href="#">Get in touch</a></p></div>
+                </center>
+            </div>
+    </div>
+
+    <div class="class4" id="menu">
+        <div class="menu1"></div>
+        <div class="text1"><i><h1 align="center" class="flipInY animated">FOOD MENU</h1></i><hr width="100" color="orange" size="5"></div>
+        <div class="text2"><p align="center" class="zoomInRight animated">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas dolores itaque repellat facere, perferendis sed? Ducimus, blanditiis molestiae? Veniam hic facilis omnis modi tempore odio ullam placeat laboriosam numquam quae?</p></div>
+        
+        <div class="text3">
+            <div class="icon1">
+                    <div class="pizza1"></div>
+                    <div class="pizza2"><b><center class="fadeInRightBig animated">Grill Pizza</center></b></div>
+                    <div class="pizza3"><p class="fadeInLeftBig animated"><b>Rs.400</b></p></div>
+                    
+            </div>
+            <div class="icon2">
+                    <div class="mass1"></div>
+                    <div class="mass2"><b><center class="fadeInRightBig animated">Salted Meat</center></b></div>
+                    <div class="mass3"><p class="fadeInLeftBig animated"><b>Rs.420</b></p></div>
+            </div>
+            <div class="icon3">
+                    <div class="bur1"></div>
+                    <div class="bur2"><b><center class="fadeInRightBig animated">Fried Biryani</center></b></div>
+                    <div class="bur3"><p class="fadeInLeftBig animated"><b>Rs.200</b></p></div>
+            </div>
+            <div class="icon4">
+                    <div class="south1"></div>
+                    <div class="south2"><b><center class="fadeInRightBig animated">South Indian</center></b></div>
+                    <div class="south3"><p class="fadeInLeftBig animated"><b>Rs.150</b></p></div>
+            </div>
+        </div>
+        <div class="text4">
+                <div class="icon5">
+                        <div class="burg1"></div>
+                        <div class="burg2"><b><center class="fadeInRightBig animated">Burger</center></b></div>
+                        <div class="burg3"><p class="fadeInLeftBig animated"><b>Rs.120</b></p></div>
+                        
+                </div>
+                <div class="icon6">
+                        <div class="fry1"></div>
+                        <div class="fry2"><b><center class="fadeInRightBig animated">Fry Chicken</center></b></div>
+                        <div class="fry3"><p class="fadeInLeftBig animated"><b>Rs.350</b></p></div>
+                </div>
+                <div class="icon7">
+                        <div class="seah1"></div>
+                        <div class="seah2"><b><center class="fadeInRightBig animated">Sea Octopus</center></b></div>
+                        <div class="seah3"><p class="fadeInLeftBig animated"><b>Rs.500</b></p></div>
+                </div>
+                <div class="icon8">
+                        <div class="mush1"></div>
+                        <div class="mush2"><b><center class="fadeInRightBig animated">Italian Mushroom</center></b></div>
+                        <div class="mush3"><p class="fadeInLeftBig animated"><b>Rs.300</b></p></div>
+                </div>
+        </div>
+        <div class="text5">
+                <div class="icon9">
+                        <div class="fish1"></div>
+                        <div class="fish2"><b><center class="fadeInRightBig animated">Grill Fish</center></b></div>
+                        <div class="fish3"><p class="fadeInLeftBig animated"><b>Rs.200</b></p></div>
+                        
+                </div>
+                <div class="icon10">
+                        <div class="egg1"></div>
+                        <div class="egg2"><b><center class="fadeInRightBig animated">Chicken Egg</center></b></div>
+                        <div class="egg3"><p class="fadeInLeftBig animated"><b>Rs.320</b></p></div>
+                </div>
+                <div class="icon11">
+                        <div class="roll1"></div>
+                        <div class="roll2"><b><center class="fadeInRightBig animated">Creamy Roll</center></b></div>
+                        <div class="roll3"><p class="fadeInLeftBig animated"><b>Rs.110</b></p></div>
+                </div>
+                <div class="icon12">
+                        <div class="sweet1"></div>
+                        <div class="sweet2"><b><center class="fadeInRightBig animated">Ummy Sweets</center></b></div>
+                        <div class="sweet3"><p class="fadeInLeftBig animated"><b>Rs.80</b></p></div>
+                </div>
+        </div>
+    </div>
+
+    <div class="class5">
+            <div class="shiv1">
+                    <p><center class="lightSpeedIn animated">&copy; 2018 Spicy Hot Restaurant Template. <br> Designed by SNS</center></p>
+                    <hr width="700" size="2" color="#e67e22">
+            </div>
+            <div class="shiv2">
+                    <a class="slideInLeft animated" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="slideInUp animated" href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="slideInUp animated" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="slideInRight animated" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </div>
+
+</body>
+</html>
